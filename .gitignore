@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# WorkBuddy local state
+.workbuddy/
+
+# Temp files
+*.tmp
+*.log
