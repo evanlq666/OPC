@@ -1,8 +1,9 @@
 # macOS
 .DS_Store
 
-# WorkBuddy local state
-.workbuddy/
+# WorkBuddy local state (skills are tracked)
+.workbuddy/*
+!.workbuddy/skills/
 
 # Temp files
 *.tmp
