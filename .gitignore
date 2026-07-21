@@ -1,0 +1,7 @@
+# Local machine/runtime artifacts
+.venv*/
+__pycache__/
+.DS_Store
+config/
+
+# Keep reusable OPC operating assets tracked.
