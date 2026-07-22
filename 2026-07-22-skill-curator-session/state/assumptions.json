@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-22",
+  "stage": "04-business-model",
+  "risky_assumptions": [
+    {
+      "id": "RA-01",
+      "description": "用户愿意为Skill评测付费",
+      "detail": "AI Agent深度用户愿意为3000-5000字的独立深度Skill评测支付¥29.9-59.9",
+      "risk_level": "critical",
+      "impact": "若证伪，B壁垒层（付费合集）不成立，整个收入模型需转向广告/赞助/微支付/订阅",
+      "current_evidence": "零——目前没有任何人在做Skill付费评测，Skill生态整体以免费为主",
+      "validation_method": "先出1-2篇免费深度评测测试传播反馈，再发布首篇付费合集看转化",
+      "success_criteria": "首篇付费合集收入>¥500",
+      "priority": "P0",
+      "plan_b": "转向广告/赞助模式，或降低付费门槛至¥3.9-9.9微支付，或采用¥19.9/月会员订阅制"
+    },
+    {
+      "id": "RA-02",
+      "description": "免费周刊→付费合集转化漏斗成立",
+      "detail": "免费周刊积累的信任能在4-8周内转化为付费合集购买行为，转化率>3%",
+      "risk_level": "high",
+      "impact": "若证伪，免费周刊只能做品牌无法变现。免费读者和付费用户可能是两群完全不同的人。",
+      "current_evidence": "未经验证。行业参考：免费Newsletter→付费产品转化率通常在1-5%",
+      "validation_method": "在周刊中埋转化点，追踪CTR和转化率；追踪用户旅程各环节数据",
+      "success_criteria": "周刊渠道贡献>50%首单，转化率>3%",
+      "priority": "P1",
+      "plan_b": "双轨策略：周刊维持品牌，付费合集走SEO/搜索渠道独立获客；或即刻→付费直达跳过周刊漏斗"
+    },
+    {
+      "id": "RA-03",
+      "description": "一人+Agent能持续产出足够高质量内容",
+      "detail": "在Agent辅助下，创始人每周20h能同时维持免费周刊(每周)+付费合集(月2-4篇)，且内容质量不下降",
+      "risk_level": "medium",
+      "impact": "若证伪，周刊断更→信任断裂→用户流失；合集质量下降→不再复购→收入崩溃；创始人可能burnout",
+      "current_evidence": "Agent辅助目标耗时是理论值，未实测。调研学习时间可能被低估。未计入Agent工作流搭建的前期投入。",
+      "validation_method": "先跑1个月内容生产SOP，严格记录每环节耗时；连续产出4期周刊+1-2篇深度评测",
+      "success_criteria": "实际耗时与预估偏差<30%，人工耗时降低>30%",
+      "priority": "P2",
+      "plan_b": "降频(周刊改双周刊，月产1篇合集)；精简(合集从5000字压缩到2000字)；部分环节外包"
+    }
+  ],
+  "medium_risk_assumptions": [
+    {
+      "id": "RA-04",
+      "description": "SkillHub/觅游生态会持续增长，不会突然关闭或调整策略",
+      "risk_level": "medium",
+      "mitigation": "多平台分发，不绑定单一平台"
+    },
+    {
+      "id": "RA-05",
+      "description": "12-18个月先发窗口足够建立护城河",
+      "risk_level": "medium",
+      "mitigation": "加速内容积累和知识图谱建设"
+    },
+    {
+      "id": "RA-06",
+      "description": "微信公众号仍是有效的周刊分发渠道",
+      "risk_level": "medium",
+      "mitigation": "同时建设Newsletter等直达渠道"
+    }
+  ]
+}

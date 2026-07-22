@@ -1,0 +1,36 @@
+{
+  "segment": "AI Skill 精选策展 IP",
+  "core_pain": "12万+ AI Skill 供给导致严重信息过载，用户缺乏可信赖的精选实测来源。平台只做分发不做策展，决策成本极高。",
+  "timing": "2026Q3，SkillHub（8万+）和觅游（4万+）刚过临界规模，策展层完全空白，窗口约12-18个月。",
+  "rings_activated": ["leverage", "boundary_shift", "resource_match"],
+  "opportunity_score": {
+    "pain": 5,
+    "leverage": 5,
+    "window": 5,
+    "resource_fit": 5,
+    "standardization": 5,
+    "cashflow": 4,
+    "total": 29
+  },
+  "why_viable": "三环完美重叠：媒体杠杆+AI自动化让一人公司就能做策展（环1）；Skill平台供给爆炸创造策展需求（环2）；创始人的跨领域判断力恰好是Skill策展最稀缺的能力（环3）。",
+  "why_big_players_wont": "平台方（腾讯SkillHub/美团觅游）的KPI是做大货架，策展是做深精选——价值网络天然冲突。AI工具公司聚焦工具层，知识付费平台缺乏持续实测能力。策展层是典型的'看得到、做不了、不想做'空间。",
+  "primary_niche": {
+    "name": "Skill策展人",
+    "target": "AI Agent工具深度用户（WorkBuddy/Cursor/Copilot用户）",
+    "value": "每周实测精选AI Skill推荐，在供给海洋中做可信赖的筛选者",
+    "unique_advantage": "AI+产品+前端+设计四维交叉视角，能同时判断Skill的技术质量、产品价值、用户体验和设计水准",
+    "monetization_path": "免费周刊（3-6月）→ 付费精选合集（29.9-59.9元/Skill）→ 自有Skill产品 → 测试工具"
+  },
+  "secondary_niches": [
+    {
+      "name": "Skill架构师",
+      "score": 23,
+      "note": "可作为第二阶段延伸方向"
+    },
+    {
+      "name": "Skill评测局",
+      "score": 20,
+      "note": "适合作为策展IP的信任基础设施模块"
+    }
+  ]
+}
