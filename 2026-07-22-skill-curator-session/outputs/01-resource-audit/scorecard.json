@@ -1,0 +1,67 @@
+{
+  "stage": "01-resource-audit",
+  "business_idea": "小程序设计提示词精品牌子/市场——复刻MotionSites模式转向微信小程序生态",
+  "founder_status": "兼职（互联网产品经理），每周约20小时可投入",
+  "categories": {
+    "experience": {
+      "score": "medium",
+      "items": [
+        "互联网产品经理（主业）",
+        "前端开发（AI辅助编程）",
+        "提示词工程",
+        "AI工具链深度使用",
+        "MotionSites商业模式分析",
+        "AI+设计+前端交叉领域认知"
+      ],
+      "gaps": ["小程序原生开发经验", "微信小程序设计规范熟悉度"]
+    },
+    "audience": {
+      "score": "low",
+      "items": ["AI工具爱好者群体"],
+      "gaps": ["其他潜在用户群认知", "付费行为具体数据"]
+    },
+    "capability": {
+      "score": "medium",
+      "items": [
+        "AI辅助开发",
+        "提示词质量判断（核心能力）",
+        "产品思维",
+        "跨领域整合（AI+产品+前端+设计）",
+        "学习与拆解能力"
+      ],
+      "gaps": ["设计审美程度", "内容创作/文案能力", "社群运营经验"]
+    },
+    "relationship": {
+      "score": "very_low",
+      "items": [],
+      "gaps": ["无已知合作方", "无早期用户触达", "无行业人脉"]
+    },
+    "channel": {
+      "score": "very_low",
+      "items": [],
+      "gaps": ["零社交账号", "零社群", "零私域", "计划搭建但尚未开始"]
+    },
+    "asset": {
+      "score": "low",
+      "items": ["Mac开发环境", "WorkBuddy", "AI工具链"],
+      "gaps": ["无公开作品集", "无技术博客", "无可复用品牌资产"]
+    },
+    "constraint": {
+      "time": "每周约20小时（工作日2h+周末5h），时间分散",
+      "money": "无收入压力，可长期投入",
+      "main_job": "互联网产品经理（白天占主力时间）",
+      "gaps": ["启动资金预算未明确", "投入可持续时长未确认"]
+    },
+    "hard_boundary": {
+      "score": "unknown",
+      "items": [],
+      "gaps": ["未明确硬性边界", "未说明绝对不能碰的事"]
+    }
+  },
+  "summary": {
+    "core_strength": "AI+产品+前端+设计四维交叉能力，提示词质量判断力，MotionSites模式深度理解",
+    "biggest_gap": "渠道从零起步、关系网络空白、无可复用品牌资产",
+    "biggest_constraint": "时间分散（兼职）、无小程序原生开发经验",
+    "biggest_flexibility": "无收入压力，可以长期打磨"
+  }
+}

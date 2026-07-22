@@ -1,0 +1,50 @@
+{
+  "business_idea": "Skill策展人——AI Skill精选策展IP，基于SkillHub/觅游生态做独立策展",
+  "key_decisions": [
+    {
+      "stage": "02-niche-positioning",
+      "decision": "确认利基方向：AI Skill精选策展IP",
+      "pivot": "策展对象从「AI前端建站提示词」升级为「AI Skill」，基于SkillHub（8万+）/觅游（4万+）生态做精选策展",
+      "positioning": "「Skill策展人」——在AI Skill供给洪流中，做那个帮你筛选的人",
+      "opportunity_score": 29,
+      "rings_activated": ["leverage", "boundary_shift", "resource_match"],
+      "rationale": "三环全激活：Skill平台爆发（边界变动）+媒体杠杆+AI自动化（杠杆）+跨领域判断力（资源）。策展层完全空白，大公司因价值网络冲突不会进入。"
+    },
+    {
+      "stage": "03-value-proposition",
+      "decision": "确认组合版价值主张：A入口（提效/免费周刊）+ B壁垒（结果/付费合集）+ C底色（降风险/品牌信任）",
+      "target_segment": "AI Agent深度实操型用户（WorkBuddy/Cursor/Copilot深度用户）",
+      "value_proposition": "「Skill策展人」为AI Agent深度用户提供三层价值——入口层免费周刊做减法、壁垒层付费合集给确定性、底色层方法论透明建信任",
+      "vp_versions": {
+        "A_entry": "提效型——「省时间的人」，每周5分钟了解最值得关注的Skill",
+        "B_moat": "结果型——「拿结果的人」，深度实测付费合集，每个Skill一份完整评测",
+        "C_foundation": "降风险型——「可信赖的人」，公开评测标准和方法论，信任来自可复现的流程"
+      },
+      "layered_strategy": "A入口（获客+认知）→ B壁垒（变现+壁垒）→ C底色（信任+复利），三层各自独立又互相增强",
+      "agent_driven": "创始人约束：后续由AI Agents（WorkBuddy）辅助搭建整个平台和体系。策展工作流60-70%自动化，人工只在「实测」和「终审」两个节点介入。",
+      "rationale": "提效型适合冷启动广撒网，结果型建立不可替代的壁垒，降风险型提供长期复利。三层不是三选一而是组合拳——对应不同的用户旅程阶段。"
+    },
+    {
+      "stage": "04-business-model",
+      "decision": "确认Lean Canvas核心商模 + 三层收费结构",
+      "lean_canvas_summary": {
+        "problem": "①信息过载→决策瘫痪 ②平台评分不可信 ③场景匹配困难",
+        "customer_segments": "主要：AI Agent深度实操型用户；次要：AI工具推广者；早期：即刻/X AI圈活跃用户",
+        "uvp": "Skill策展人——每周10分钟，四维实测帮你从12万+Skill中挑出真正值得装的",
+        "solution": "免费周刊(简评200-300字/个，3-5个/周) → 付费合集(深度评测3000-5000字/篇) → 品牌信任资产(公开评测标准)",
+        "channels": "核心：公众号+即刻；辅助：小红书+Newsletter；后期：知乎/少数派/X",
+        "revenue": "冷启动¥0 → 变现¥2K-4K/月 → 放大¥5K-15K/月；合集¥29.9-59.9，场景化合集¥79.9-99.9，未来会员¥19.9/月",
+        "cost": "固定¥150-550/月；最大成本=创始人时间(80h/月)，Agent辅助目标降至48h/月",
+        "key_metrics": "北极星：信任度；获客：订阅数/打开率；变现：转化率>3%/复购率>30%；Agent效率：人工耗时降低>30%",
+        "unfair_advantage": "①四维交叉视角 ②先发+数据护城河(Skill知识图谱) ③Agent工作流护城河 ④大公司'看得到做不了不想做'"
+      },
+      "pricing_strategy": "中位定价逐步上探：¥29.9入门 → ¥39.9-49.9主力 → ¥59.9高价值 → ¥79.9-99.9合集。初期用小报童等平台，后期自建支付降低费率。",
+      "agent_automation": "策展工作流总体自动化60-70%：发现90%/初筛80%/实测40%/评测60%/发布90%。人工只在「实测」和「终审」两个节点不可替代。",
+      "top_3_risky_assumptions": [
+        "用户愿意为Skill评测付费（¥29.9-59.9）— 基石假设，当前零证据",
+        "免费周刊能有效转化为付费合集用户（转化率>3%）— 漏斗假设，免费读者和付费用户可能是两群人",
+        "一人+Agent能持续产出足够高质量内容 — 产能假设，月80h需降至48h"
+      ]
+    }
+  ]
+}

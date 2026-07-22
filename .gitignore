@@ -1,7 +1,18 @@
-# Local machine/runtime artifacts
+# macOS
+.DS_Store
+
+# WorkBuddy local state
+.workbuddy/
+
+# Temp files
+*.tmp
+*.log
+
+# Python/runtime artifacts
 .venv*/
 __pycache__/
-.DS_Store
+
+# Local machine configuration
 config/
 
 # Keep reusable OPC operating assets tracked.

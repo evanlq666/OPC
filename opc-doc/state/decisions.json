@@ -1,0 +1,18 @@
+{
+  "decisions": [
+    {
+      "stage": "02-niche-positioning",
+      "decision": "主利基选定为「Vibe Coding × 产品思维」- 帮有产品想法的人用AI把想法变成产品。目标受众从PM扩展为所有有产品想法但不会写代码的人，PM是信任锚点而非受众围栏",
+      "score": "28/30",
+      "details": "AI视频生成作为差异化赋能层，分两阶段推进：Phase 1纯工具→Phase 2教学内容扩展",
+      "date": "2026-07-15"
+    },
+    {
+      "stage": "03-value-proposition",
+      "decision": "价值主张聚焦P5/P8/P9/P10四大核心痛点，5大内容方向覆盖从FOMO消除到硬产出积累",
+      "details": "价值主张陈述：为有产品想法但不会写代码的PM，提供用PM思维驾驭AI的能力路径。5大方向：AI驾驶舱/0行代码1个产品/PM进化论/PM语言教学/AI视频课",
+      "date": "2026-07-16"
+    }
+  ],
+  "last_updated": "2026-07-16T12:20:00+08:00"
+}
