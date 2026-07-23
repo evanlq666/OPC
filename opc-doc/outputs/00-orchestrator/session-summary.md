@@ -79,10 +79,25 @@
 - 核心发现：无人在「PM思维×AI实操」交叉点扎根
 - 前4篇选题已提炼
 
-### 产出文件
-- `opc-doc/outputs/06-mvp-design/mvp-plan-v2.md` — 图文MVP v2完整方案
-- `opc-doc/outputs/06-mvp-design/对标账号分析.md` — 16账号深度分析
-- `2026-07-22-skill-curator-session/` — 方向B完整OPC建盘（战略4阶段）
+### 产出文件（本次会话）
+- `opc-doc/outputs/07-conversion-loop/messaging-guide.md` — 语调原则指南（5条原则+检查清单+句式指引）
+- `opc-doc/outputs/07-conversion-loop/xhs-posts-v5-toned.md` — 前2篇第一人称叙事翻译
+- `assets/character-evan/` — Evan 虚拟形象角色库（5个情绪/动作）
+- `assets/character-evan/styles/` — 第一轮5种风格候选（纽约客/水墨/版画/炭笔/青年漫）
+- `assets/post-01-firstperson-v2/` — post-01 首发5页视觉
+
+### Git 提交
+4 次本地提交，领先 origin/main 3 个 commit。需手动 `git push` 后其他电脑可 `git pull` 继续。
+
+### Obsidian 知识库
+- `01 Projects/一人公司内容 IP 综合知识基础/2026-07-24 执行推进 - 虚拟形象与文案翻译.md`
+- `01 Projects/一人公司内容 IP 综合知识基础/关键决策记录.md`（已追加今日决策）
+
+### 明天继续
+1. `git pull` 拉取最新
+2. 翻译 #3–#10（`xhs-posts-v5-toned.md`）
+3. 按锁定角色库批量生成前10篇视觉
+4. `git push` + Obsidian 同步
 
 ---
 
