@@ -83,3 +83,28 @@
 - `opc-doc/outputs/06-mvp-design/mvp-plan-v2.md` — 图文MVP v2完整方案
 - `opc-doc/outputs/06-mvp-design/对标账号分析.md` — 16账号深度分析
 - `2026-07-22-skill-curator-session/` — 方向B完整OPC建盘（战略4阶段）
+
+---
+
+## 2026-07-24~25 执行方案深度迭代
+
+### 四次方向PIVOT
+1. **v4: 五线品类** → AI焦虑/实践/提效/个人系统/一人公司
+2. **v5: Agent双路** → 学Agent保饭碗(路1) + 用Agent做副业(路2)。关键洞察：用户不想从小程序切入（时间成本高），也不想写周报/会议纪要（被说烂了）
+3. **首篇E版选定**：5版方案对比→选"反向提问"（如果明天因为AI被裁你手里有什么？）
+4. **视觉方案迭代**：深蓝卡片风→小黑手绘→物料插画→小红书爆款风→**暖调水粉虚拟形象**
+
+### 关键决策
+- 首篇方向：Agent双路·反向提问版（composite 8.14/10）
+- 视觉风格：暖调水粉（Gouache）——哑光质感、大地色系、Evan半写实角色贯穿
+- 10种角色风格方案已出，选定#7暖调水粉，3场景案例已生成
+- 小红书真实搜索数据已验证：AI焦虑+裁员交叉点供给真空
+- cheat-on-content系统已初始化（v0 rubric, calibration_samples=0）
+
+### 产出文件
+- `opc-doc/MASTERPLAN.md` — 完整方案总览
+- `opc-doc/outputs/07-conversion-loop/content-plan-v5-agent-dual-path.md` — v5前5篇
+- `opc-doc/outputs/07-conversion-loop/post-01-5-versions.md` — 首篇5版方案
+- `scripts/2026-07-24_agent-dual-path_post-01.md` — 首篇文案
+- `assets/character/evan-avatar-styles/` — 10种角色风格+暖调水粉3场景
+- `rubric_notes.md` + `.cheat-state.json` — cheat-on-content评分系统
