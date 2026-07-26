@@ -79,45 +79,36 @@
 - 核心发现：无人在「PM思维×AI实操」交叉点扎根
 - 前4篇选题已提炼
 
-### 产出文件（本次会话）
+<<<<<<< HEAD
+### 产出文件（本次会话 · 本机 7/24 并行轨道）
+这些文件与另一台电脑 7/25-26 的产出为并行工作，与 MASTERPLAN.md 中后续决策可能存在差异：
 - `opc-doc/outputs/07-conversion-loop/messaging-guide.md` — 语调原则指南（5条原则+检查清单+句式指引）
 - `opc-doc/outputs/07-conversion-loop/xhs-posts-v5-toned.md` — 前2篇第一人称叙事翻译
-- `assets/character-evan/` — Evan 虚拟形象角色库（5个情绪/动作）
-- `assets/character-evan/styles/` — 第一轮5种风格候选（纽约客/水墨/版画/炭笔/青年漫）
+- `assets/character-evan/` — 山田孝之风 manga 角色库（5个情绪/动作）
 - `assets/post-01-firstperson-v2/` — post-01 首发5页视觉
-
-### Git 提交
-4 次本地提交，领先 origin/main 3 个 commit。需手动 `git push` 后其他电脑可 `git pull` 继续。
-
-### Obsidian 知识库
-- `01 Projects/一人公司内容 IP 综合知识基础/2026-07-24 执行推进 - 虚拟形象与文案翻译.md`
-- `01 Projects/一人公司内容 IP 综合知识基础/关键决策记录.md`（已追加今日决策）
-
-### 明天继续
-1. `git pull` 拉取最新
-2. 翻译 #3–#10（`xhs-posts-v5-toned.md`）
-3. 按锁定角色库批量生成前10篇视觉
-4. `git push` + Obsidian 同步
 
 ---
 
-## 2026-07-24 执行推进
+## 2026-07-24~25 执行方案深度迭代（另一台电脑 · 最新方向）
 
-### 已完成
-- 落盘 `opc-doc/outputs/07-conversion-loop/messaging-guide.md`
-  - 来源：opc-tone-check 团队（言之 + 闭环）确认的 5 条第一人称语调原则
-  - 内容：语调定位、70/20/10 配比、改写检查清单、句式指引、风险红线、对比示例
+### 四次方向PIVOT
+1. **v4: 五线品类** → AI焦虑/实践/提效/个人系统/一人公司
+2. **v5: Agent双路** → 学Agent保饭碗(路1) + 用Agent做副业(路2)。关键洞察：用户不想从小程序切入（时间成本高），也不想写周报/会议纪要（被说烂了）
+3. **首篇E版选定**：5版方案对比→选"反向提问"（如果明天因为AI被裁你手里有什么？）
+4. **视觉方案迭代**：深蓝卡片风→小黑手绘→物料插画→小红书爆款风→**暖调水粉虚拟形象**
 
-### 进行中 / 待用户确认
-- **虚拟形象风格选择**：
-  - 第一轮 5 张候选图（纽约客漫画 / 水墨写意 / 版画印刷 / 炭笔速写 / 青年漫浦泽风）被用户反馈为「太老气、太假」
-  - 已按用户提供的日本演员山田孝之参考，重新生成 3 张新候选：
-    - 沉思基准形象
-    - 焦虑喝咖啡
-    - 展示成果
-  - **新方向**：青年漫线稿风 + 山田孝之式「糙真实」气质，更年轻、更自然、更像真人
-- 待用户确认该方向后启动：
-  1. 固定角色库补全（多情绪 / 多动作）
-  2. 前 10 篇图文视觉批量生成
-  3. content-plan-10-v4-final.md 第一人称叙事版翻译
-  4. Git 提交 + Obsidian 知识库同步
+### 关键决策
+- 首篇方向：Agent双路·反向提问版（composite 8.14/10）
+- 视觉风格：暖调水粉（Gouache）——哑光质感、大地色系、Evan半写实角色贯穿
+- 10种角色风格方案已出，选定#7暖调水粉，3场景案例已生成
+- 小红书真实搜索数据已验证：AI焦虑+裁员交叉点供给真空
+- cheat-on-content系统已初始化（v0 rubric, calibration_samples=0）
+
+### 产出文件
+- `opc-doc/MASTERPLAN.md` — 完整方案总览
+- `opc-doc/outputs/07-conversion-loop/content-plan-v5-agent-dual-path.md` — v5前5篇
+- `opc-doc/outputs/07-conversion-loop/post-01-5-versions.md` — 首篇5版方案
+- `scripts/2026-07-24_agent-dual-path_post-01.md` — 首篇文案
+- `assets/character/evan-avatar-styles/` — 10种角色风格+暖调水粉3场景
+- `rubric_notes.md` + `.cheat-state.json` — cheat-on-content评分系统
+- `.workbuddy/skills/cheat-on-content/` + `.workbuddy/skills/jimeng-image-gen/` — 新增skills
