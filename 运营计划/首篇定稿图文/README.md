@@ -1,32 +1,37 @@
 # 首篇定稿图文｜Agent 双路路线图
 
-版本日期：2026-07-29  
+版本日期：2026-07-30（封面拆分：7 页 → 8 页）  
 账号：Evan下班了  
-图像规格：7 张均为 `1086 × 1448`，小红书 3:4 竖版  
+图像规格：`首篇定稿图文/` 内 7 张为 `1086 × 1448`，小红书 3:4 竖版；拆分封面图同比例本地生成  
 状态：发布候选，发布前仍需手机预览检查中文小字
 
-## 图片顺序
+## 图片顺序（共 8 页）
 
-1. `01-cover-final-v20260729.png`  
-   封面：`AI 裁员看多了 / 我终于不敢只收藏教程了 / 真有一天轮到我，我手里有什么？`
+1. 封面（第 1 页）：`AI 裁员看多了 / 我不敢只收藏教程了`  
+   来源：本地 `opc-doc/workbuddy/assets/post-01-collage-split/page01-cover-ai-layoff-anxiety.png`（不进 git，直接发布用）
 
-2. `02-emotion-final-v20260729.png`  
+2. 追问（第 2 页）：`真有一天轮到我 / 我手里有什么？`  
+   来源：本地 `opc-doc/workbuddy/assets/post-01-collage-split/page02-question-what-do-i-have.png`（不进 git，直接发布用）
+
+3. `02-emotion-final-v20260729.png`  
    情绪页：最近刷到 AI 裁员、组织调整消息后的真实焦虑。
 
-3. `03-judgement-final-v20260729.png`  
+4. `03-judgement-final-v20260729.png`  
    判断页：从收藏教程转向跑一个小任务。重点文案：`教程越收藏越多 / 自己一步没挪`。
 
-4. `04-route-final-v20260729.png`  
+5. `04-route-final-v20260729.png`  
    路线图页：两条路，保住工作和找条退路，汇合到个人系统 / Vibe Coding。
 
-5. `05-action-final-v20260729.png`  
+6. `05-action-final-v20260729.png`  
    行动页：先别做大系统，从会议纪要这个熟悉小任务开始。
 
-6. `06-expectation-final-v20260729.png`  
+7. `06-expectation-final-v20260729.png`  
    预期管理页：`我先不追求一次做好 / 能跑起来就行`。
 
-7. `07-route-map-final-v20260729.png`  
+8. `07-route-map-final-v20260729.png`  
    收尾路线图页：记下当前路线，强调 `每天下班，跑通一点点`。
+
+> 说明：原 `01-cover-final-v20260729.png` 上的 4 行文案已拆成第 1、2 页两张独立图，封面只保留情绪钩子。第 1、2 页拆分图按约定不纳入 git 版本管理。
 
 ## 发布前检查
 
