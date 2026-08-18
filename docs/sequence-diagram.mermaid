@@ -1,0 +1,39 @@
+sequenceDiagram
+    participant U as 用户
+    participant A as App(app.js)
+    participant S as Score(score.js)
+    participant C as Canvas(canvas.js)
+    participant L as Storage(storage.js)
+
+    U->>A: 打开 index.html
+    A->>A: init() 绑定事件
+    A->>L: loadLast()
+    L-->>A: last (记录 或 null)
+    A->>A: switchView('cover')
+
+    U->>A: 点「开始测试」
+    A->>A: startQuiz() 重置状态
+    A->>A: switchView('quiz') + renderQuestion()
+
+    U->>A: 点选选项（每题）
+    A->>A: selectOption(key) 记录答案
+    alt 非第 12 题
+        A->>A: current++ → renderQuestion()
+    else 第 12 题
+        A->>S: calcTotal(answers)
+        S-->>A: total
+        A->>S: getResult(total)  ← 先判隐藏款再判8档
+        S-->>A: result
+        A->>S: compare(result, last)
+        S-->>A: compareText
+        A->>L: saveResult({order,total})
+        A->>A: switchView('result')
+        A->>C: setup(canvas)  ← dpr 高清
+        A->>C: drawResultCard(canvas, result, compareText)
+    end
+
+    U->>A: 点「截个图保存」
+    A->>A: guideScreenshot() → alert 引导系统截图（无剪贴板/下载）
+
+    U->>A: 点「再测一次」
+    A->>A: restart() 保留 last → startQuiz()

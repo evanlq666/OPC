@@ -1,0 +1,447 @@
+/* ============================================================
+   style.css — 「下班自由等级测试」全局样式
+   复古牛皮纸剪贴板拼贴风 · 375–430px 竖屏优先 · 安全区适配
+   ============================================================ */
+:root {
+  --paper: #F2E4C8;
+  --paper-deep: #E8D5AE;
+  --card: #FFFBF2;
+  --cream: #FAF3E3;
+  --text: #3B2A1C;
+  --text-sub: #8A7158;
+  --yellow: #FFC327;
+  --orange: #FF8A3D;
+  --red: #E4572E;
+  --ink: #2A1F14;
+  --shadow: 0 4px 16px rgba(59, 42, 28, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--paper);
+  /* 牛皮纸细纹理（纯 CSS 模拟，无图片） */
+  background-image:
+    radial-gradient(rgba(59, 42, 28, 0.035) 1px, transparent 1px);
+  background-size: 14px 14px;
+  color: var(--text);
+  font-family: system-ui, -apple-system, "PingFang SC", "HarmonyOS Sans", "MiSans", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.55;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: calc(env(safe-area-inset-top) + 16px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 28px);
+}
+
+/* ---------------- 视图切换 ---------------- */
+.view {
+  display: none;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.view.active {
+  display: block;
+  animation: fadeIn 0.28s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------------- 通用卡片 ---------------- */
+.card {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 20px 18px;
+  position: relative;
+}
+
+/* 撕纸/胶带角标通用 */
+.tape {
+  position: absolute;
+  top: -10px;
+  width: 72px;
+  height: 22px;
+  background: rgba(255, 195, 39, 0.78);
+  border: 1px solid rgba(42, 31, 20, 0.35);
+  transform: rotate(-4deg);
+  box-shadow: 0 2px 4px rgba(59, 42, 28, 0.12);
+}
+
+/* ---------------- 按钮 ---------------- */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 20px;
+  background: var(--yellow);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border: 2px solid var(--ink);
+  border-radius: 24px;
+  box-shadow: 0 4px 0 var(--ink);
+  transition: transform 0.06s ease, box-shadow 0.06s ease;
+}
+
+.btn-primary:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.btn-ghost {
+  min-height: 44px;
+  padding: 10px 18px;
+  background: transparent;
+  color: var(--text-sub);
+  font-size: 15px;
+  font-weight: 700;
+  border: 1.5px dashed var(--text-sub);
+  border-radius: 22px;
+}
+
+.btn-ghost:active {
+  background: var(--cream);
+}
+
+/* ============================================================
+   封面
+   ============================================================ */
+.cover-ip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.ip-avatar-wrap {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+}
+
+.ip-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 2px solid var(--ink);
+  background: var(--yellow);
+}
+
+.ip-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.ip-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.ip-sub {
+  font-size: 12px;
+  color: var(--text-sub);
+}
+
+.cover-corner {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 11px;
+  color: var(--text-sub);
+  font-weight: 700;
+}
+
+.cover-main {
+  margin-top: 6px;
+}
+
+.cover-title {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.cover-slogan {
+  font-size: 15px;
+  color: var(--text-sub);
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.badge-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 16px;
+}
+
+.badge-chip {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  border: 1.5px solid var(--ink);
+  box-shadow: 0 2px 4px rgba(59, 42, 28, 0.15);
+}
+
+.cover-intro {
+  font-size: 15px;
+  color: var(--text);
+  margin: 0 0 6px;
+  white-space: pre-line;
+}
+
+.cover-last {
+  margin: 12px 0;
+  padding: 10px 14px;
+  background: var(--cream);
+  border: 1.5px dashed var(--orange);
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cover-actions {
+  margin-top: 18px;
+}
+
+.privacy {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-sub);
+  line-height: 1.5;
+}
+
+/* ============================================================
+   答题
+   ============================================================ */
+.quiz-top {
+  margin-bottom: 16px;
+}
+
+.quiz-progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.quiz-progress-text {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.quiz-progress-count {
+  font-size: 12px;
+  color: var(--text-sub);
+  font-weight: 700;
+}
+
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: var(--paper-deep);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(42, 31, 20, 0.25);
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: var(--orange);
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.quiz-question {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.45;
+  margin: 18px 0;
+  padding: 0 2px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 选项大卡片（热区 ≥ 44px，实际更高） */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 60px;
+  padding: 12px 14px;
+  text-align: left;
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(59, 42, 28, 0.10);
+  transition: background 0.12s ease, transform 0.06s ease;
+}
+
+.option:active {
+  background: var(--cream);
+  transform: scale(0.99);
+}
+
+.option.selected {
+  background: var(--cream);
+  border-color: var(--orange);
+  border-width: 2px;
+}
+
+.option-label {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1.5px solid var(--ink);
+}
+
+.option-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.quiz-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/* ============================================================
+   结果
+   ============================================================ */
+.result-head {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.result-head h2 {
+  margin: 0 0 4px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.result-head .result-sub {
+  font-size: 13px;
+  color: var(--text-sub);
+  font-weight: 700;
+}
+
+.result-canvas-wrap {
+  text-align: center;
+}
+
+#result-canvas {
+  display: inline-block;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background: var(--paper);
+}
+
+.result-meta {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.result-last {
+  font-size: 13px;
+  color: var(--text-sub);
+  font-weight: 700;
+}
+
+.result-compare {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--red);
+}
+
+.result-compare-detail {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-sub);
+}
+
+.result-actions {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.screenshot-hint {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-sub);
+}
+
+.btn-restart {
+  background: transparent;
+  color: var(--text);
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ============================================================
+   小屏（≤360px）微调
+   ============================================================ */
+@media (max-width: 360px) {
+  .cover-title { font-size: 26px; }
+  .quiz-question { font-size: 19px; }
+  .option-text { font-size: 14px; }
+}

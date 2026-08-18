@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>下班自由等级测试</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ==================== 封面 ==================== -->
+  <section id="view-cover" class="view active">
+    <div class="cover-ip">
+      <span class="ip-avatar-wrap">
+        <img class="ip-avatar" src="./assets/evan.png" alt="Evan 头像">
+      </span>
+      <div class="ip-meta">
+        <span class="ip-name">Evan下班了</span>
+        <span class="ip-sub">🤖 小机器人 · 陪你准时下班</span>
+      </div>
+    </div>
+
+    <div class="card cover-main">
+      <span class="cover-corner">Evan下班了 · 第6篇</span>
+      <h1 class="cover-title">下班自由<br>等级测试</h1>
+      <p class="cover-slogan">主打一个「准时下班」——8 个等级，你是「下班拿捏者」还是「哦不人」？</p>
+
+      <div class="badge-preview" id="badge-preview"></div>
+
+      <p class="cover-intro">谁懂啊，明明到点了，屁股却像焊在了工位上？
+12 道情景题，测测你的「下班自由」到底在哪个等级。
+别思考，凭直觉选，测完记得转发给那个「想走不敢走」的同事，对答案走起。</p>
+
+      <div class="cover-last" id="cover-last"></div>
+    </div>
+
+    <div class="cover-actions">
+      <button type="button" class="btn-primary" id="btn-start">开始测试</button>
+      <p class="privacy">本测试纯本地计算，不采集、不上传你的任何数据，放心玩、放心晒</p>
+    </div>
+  </section>
+
+  <!-- ==================== 答题 ==================== -->
+  <section id="view-quiz" class="view">
+    <div class="quiz-top">
+      <div class="quiz-progress-row">
+        <span class="quiz-progress-text" id="quiz-progress">第 1 / 12 题</span>
+        <span class="quiz-progress-count">点选即下一题</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="quiz-fill"></div>
+      </div>
+    </div>
+
+    <div class="quiz-question" id="quiz-question"></div>
+
+    <div class="quiz-options" id="quiz-options"></div>
+
+    <div class="quiz-nav">
+      <button type="button" class="btn-ghost" id="btn-prev">← 上一题</button>
+    </div>
+  </section>
+
+  <!-- ==================== 结果 ==================== -->
+  <section id="view-result" class="view">
+    <div class="result-head">
+      <h2>你的下班自由等级</h2>
+      <div class="result-sub">截图保存，转发到同事群对答案</div>
+    </div>
+
+    <div class="result-canvas-wrap">
+      <canvas id="result-canvas"></canvas>
+    </div>
+
+    <div class="result-meta">
+      <div class="result-last" id="result-last"></div>
+      <div class="result-compare" id="result-compare"></div>
+      <div class="result-compare-detail" id="result-compare-detail"></div>
+    </div>
+
+    <div class="result-actions">
+      <button type="button" class="btn-primary" id="btn-screenshot">截个图保存</button>
+      <p class="screenshot-hint">长按保存到相册，转发到同事群对答案（截图里已经带文案，不用再复制）</p>
+      <button type="button" class="btn-restart" id="btn-restart">再测一次</button>
+      <p class="privacy">本测试纯本地计算，不采集、不上传你的任何数据，放心玩、放心晒</p>
+    </div>
+  </section>
+
+  <!-- 脚本按固定顺序外链引入（无内联 script、无行内事件） -->
+  <script src="./js/config.js"></script>
+  <script src="./js/questions.js"></script>
+  <script src="./js/results.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/score.js"></script>
+  <script src="./js/canvas.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+classDiagram
+    class Option {
+        +string key
+        +string text
+        +int score
+    }
+    class Question {
+        +int id
+        +string text
+        +Option[] options
+    }
+    class Result {
+        +int order
+        +string code
+        +string title
+        +string badge
+        +bool isHidden
+        +string color
+        +int min
+        +int max
+        +string tagline
+        +string persona
+        +string hook
+    }
+    class LastRecord {
+        +int order
+        +int total
+        +int ts
+    }
+    class AppState {
+        +string view
+        +int current
+        +string[] answers
+        +int total
+        +Result result
+        +LastRecord last
+        +string compareText
+    }
+    class ScoreModule {
+        +calcTotal(answers) int
+        +getResult(total) Result
+        +compare(cur, last) string
+    }
+    class StorageModule {
+        +loadLast() LastRecord
+        +saveResult(result) void
+    }
+    class CanvasModule {
+        +setup(canvas) Ctx
+        +drawResultCard(canvas, result, compareText) void
+    }
+    class AppModule {
+        +init() void
+        +switchView(name) void
+        +startQuiz() void
+        +renderQuestion() void
+        +selectOption(key) void
+        +prevQuestion() void
+        +showResult() void
+        +restart() void
+        +guideScreenshot() void
+    }
+
+    Question *-- Option : 含4个
+    AppState o-- Result : result
+    AppState o-- LastRecord : last
+    AppModule ..> Question : 读取
+    AppModule ..> ScoreModule : 调用
+    AppModule ..> CanvasModule : 调用
+    AppModule ..> StorageModule : 调用
+    ScoreModule ..> Result : 返回

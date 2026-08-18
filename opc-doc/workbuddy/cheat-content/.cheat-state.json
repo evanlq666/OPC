@@ -13,12 +13,16 @@
   "pool_status": "markdown",
   "data_layer": "markdown",
   "hooks_installed": false,
-  "enabled_trend_sources": ["manual-paste"],
-  "enabled_perf_adapters": ["xhs-explore"],
+  "enabled_trend_sources": [
+    "manual-paste"
+  ],
+  "enabled_perf_adapters": [
+    "xhs-explore"
+  ],
   "last_bump_at": null,
   "last_bump_self_audited": false,
-  "last_published_at": null,
-  "last_published_file": null,
+  "last_published_at": "2026-08-14T20:00:00+08:00",
+  "last_published_file": "predictions/2026-08-13_357e2a815e8d_3信号判断岗位.md",
   "last_retro_at": null,
   "last_trends_run_at": null,
   "last_trends_added_count": 0,
@@ -28,5 +32,6 @@
   "pending_retros": [],
   "shoots": [],
   "in_progress_session": null,
-  "initialized_at": "2026-07-24T19:25:00+08:00"
+  "initialized_at": "2026-07-24T19:25:00+08:00",
+  "last_published_link": "https://xhslink.cn/o/6loVnXOLVGp"
 }
